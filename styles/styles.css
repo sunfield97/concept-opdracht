@@ -49,6 +49,12 @@ h1 {
     padding: 16px 0;
 }
 
+/* nog aanpassen */
+h2 {
+    font-size: 36px;
+    padding: 16px 0;
+}
+
 p {
     margin: 12px 0;
 }
@@ -158,6 +164,15 @@ button:hover {
     background-image: url("../assets/squiggle_line_stripe.svg");
 }
 /* --------------- 4.2 Introduction ------------------- */
+#introduction {
+    color: #5722CD;
+    background-color: white;
+}
+.introduction__link {
+    color: #0C0C0C;
+    font-weight: 500;
+    margin-top: 100px;
+}
 
 /* --------------- 4.3 Footer ------------------------- */
 #footer {
