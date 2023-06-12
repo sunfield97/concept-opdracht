@@ -49,10 +49,10 @@ h1 {
     padding: 16px 0;
 }
 
-/* nog aanpassen */
-h2 {
-    font-size: 36px;
-    padding: 16px 0;
+/* nog aanpassen (line-height) */
+h3 {
+    font-size: 30px;
+    padding: 12px 0;
 }
 
 p {
@@ -117,9 +117,9 @@ button:hover {
 
 /* --------------- 4.1 Header ------------------------- */
 #header {
+    color: white;
     background: #4B49E8;
     background: linear-gradient(129deg, #4B49E8 0%, #4B49E8 26%, #5722CD  100%);
-    color: white;
     padding: 30px 0;
     position: relative;
 }
@@ -174,7 +174,52 @@ button:hover {
     margin-top: 100px;
 }
 
-/* --------------- 4.3 Footer ------------------------- */
+/* --------------- 4.3 Contact ------------------------ */
+#contact {
+    color: white;
+    background-color: #4B49E8;
+    background: linear-gradient(129deg, #4B49E8 0%, #4B49E8 26%, #5722CD  100%);
+    position: relative;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+}
+
+/* values nog aanpassen */
+.contact__form input {
+    color: #7A7A7A;
+    background-color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+
+    display: block;
+    padding: 20px;
+    width: 100%;
+
+    border: 1px solid #7A7A7A;
+    border-radius: 4px;
+}
+
+.contact__form input ::placeholder {
+    color: #7A7A7A;
+}
+
+/* values nog aanpassen */
+.contact__form label {
+    font-size: 10px;
+    font-weight: 500;
+    padding: 20px 0;
+}
+
+.contact__form button {
+    align-self: center;
+    width: 200px;
+}
+    /* --------------- 4.4 Footer ------------------------- */
 #footer {
     color: white;
     background-color: black;
@@ -182,7 +227,6 @@ button:hover {
     padding: 20px 0;
     font-size: 14px;
 }
-
 /* ------------------------------- 5. Media Queries -------------------------------- */
 
 /* @media screen and (max-width: 320px) {
