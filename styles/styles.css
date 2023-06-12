@@ -27,11 +27,9 @@ body {
 }
 
 /*
-font-families:
 font-family: 'Merriweather', serif;
 font-family: 'Roboto', sans-serif;
 
-Colors:
 Paars #5722CD;
 Blauw #4845E4;
 Roze #ED4385;
@@ -75,14 +73,10 @@ p {
     margin: 0 20px;
 }
 
-/*We gebruiken hier geen flex-basis property, omdat dit element soms in een parent met column-richting en
-soms in een parent met row-richting kan staan. In een column gaat flex-basis over de hoogte, niet de breedte.
-Dus om dan alsnog de breedte te veranderen, hebben we max-width (nooit groter dan dit) property nodig. */
 .default-text-restrictor {
     max-width: 850px;
     text-align: center;
 }
-
 .default-area-padding {
     padding: 100px 0;
 }
@@ -164,6 +158,15 @@ button:hover {
     background-image: url("../assets/squiggle_line_stripe.svg");
 }
 /* --------------- 4.2 Introduction ------------------- */
+
+/* --------------- 4.3 Footer ------------------------- */
+#footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
 
