@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
 /*////////////////////////
     Table of Contents
     1. Global Styles
@@ -18,8 +19,41 @@
     margin: 0;
     padding: 0;
 }
-/* ------------------------------- 2. Typography ----------------------------------- */
 
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+/*
+font-families:
+font-family: 'Merriweather', serif;
+font-family: 'Roboto', sans-serif;
+
+Colors:
+Paars #5722CD;
+Blauw #4845E4;
+Roze #ED4385;
+Zwart #0C0C0C (voor standaard tekst);
+Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:
+Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)
+Grijs #7A7A7A (voor de service-tegel tekst);
+ */
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Merriweather, serif;
+}
+
+h1 {
+    font-size: 46px;
+    padding: 16px 0;
+}
+
+p {
+    margin: 12px 0;
+}
 /* ------------------------------- 3. Layout --------------------------------------- */
 
 /* --------------- 3.1 Reusables ----------------------- */
@@ -31,32 +65,110 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-
     width: 100%
 }
 .inner-container {
-    flex-basis: 1000px;
-
+    flex-basis: 1400px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
     margin: 0 20px;
 }
 
+/*We gebruiken hier geen flex-basis property, omdat dit element soms in een parent met column-richting en
+soms in een parent met row-richting kan staan. In een column gaat flex-basis over de hoogte, niet de breedte.
+Dus om dan alsnog de breedte te veranderen, hebben we max-width (nooit groter dan dit) property nodig. */
+.default-text-restrictor {
+    max-width: 850px;
+    text-align: center;
+}
+
+.default-area-padding {
+    padding: 100px 0;
+}
+
 /* --------------- 3.2 Other --------------------------- */
+a,
+a:visited,
+a:link {
+    text-decoration: none;
+    color: #5722CD;
+}
+
+button {
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    background-color: #ED4385;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 5px 8px 4px rgba(0, 0, 0, .2);
+    padding: 25px 40px;
+    margin: 28px 0;
+}
+
+button:hover {
+    cursor: pointer;
+}
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
+#header {
+    background: #4B49E8;
+    background: linear-gradient(129deg, #4B49E8 0%, #4B49E8 26%, #5722CD  100%);
+    color: white;
+    padding: 30px 0;
+    position: relative;
+}
 
+.hero-section__navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.hero-section__navbar ul {
+    flex-basis: 400px;
+    flex-shrink: 1;
+    flex-grow: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hero-section__navbar a {
+    color: white;
+}
+
+.header-content__hero {
+    padding: 100px 0;
+    margin-bottom: 88px;
+    font-size: 28px;
+}
+
+.header__squiggle {
+    display: block;
+    width: 78px;
+    height: 100px;
+    margin: 60px 0 0 0;
+    position: absolute;
+    bottom: 0;
+    /*Hiermee zeggen we: plaats 'm horizontaal gezien op 50% van de breedte,
+    MAAR wel min de helft van de breedte van de afbeelding zelf (width: 78px) */
+    left: calc(50% - 39px);
+    background-image: url(assets/squiggle_line_stripe.svg);
+}
 /* --------------- 4.2 Introduction ------------------- */
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
 
-@media screen and (max-width: 320px) {
+/* @media screen and (max-width: 320px) {
     /* hier aanpassing voor mobile design */
     /* h1 {
             font-size: 1.5rem;
      */
-}
