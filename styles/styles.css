@@ -190,7 +190,8 @@ button:hover {
 }
 
 /* values nog aanpassen */
-.contact__form input {
+.contact__form input,
+.contact__form textarea {
     color: #7A7A7A;
     background-color: white;
     font-family: Roboto, sans-serif;
@@ -204,7 +205,8 @@ button:hover {
     border-radius: 4px;
 }
 
-.contact__form input ::placeholder {
+.contact__form input::placeholder,
+.contact__form textarea::placeholder {
     color: #7A7A7A;
 }
 
