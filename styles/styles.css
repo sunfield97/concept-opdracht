@@ -44,21 +44,30 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Merriweather, serif;
 }
 
-h1 {
+h1 { /*header*/
     font-size: 46px;
     padding: 16px 0;
 }
 
-/* nog aanpassen (line-height) */
-h3 {
-    font-size: 30px;
-    padding: 12px 0;
+h2 { /*contact*/
+    font-size: 46px;
+    padding: 16px 0;
 }
 
-h4 {
+h3 { /*intro*/
+    font-size: 32px;
+    padding: 12px 0;
+    line-height: 1.5;
+}
+
+h4 { /*projects*/
     font-size: 32px;
     padding: 12px 0;
     margin: 24px 0;
+}
+
+h5 { /*service*/
+
 }
 
 p {
@@ -249,13 +258,12 @@ button:hover {
     width: 100%;
 }
 
-/* values nog aanpassen */
 .contact__form input,
 .contact__form textarea {
     color: #7A7A7A;
     background-color: white;
     font-family: Roboto, sans-serif;
-    font-size: 12px;
+    font-size: 16px;
 
     display: block;
     padding: 20px;
@@ -270,10 +278,9 @@ button:hover {
     color: #7A7A7A;
 }
 
-/* values nog aanpassen */
 .contact__form label {
-    font-size: 10px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 600;
     padding: 20px 0;
 }
 
