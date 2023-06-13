@@ -151,7 +151,7 @@ button:hover {
     font-size: 28px;
 }
 
-.header__squiggle {
+.header__squiggle { /*copy van uitwerkingen */
     display: block;
     width: 78px;
     height: 100px;
@@ -174,7 +174,59 @@ button:hover {
     margin-top: 100px;
 }
 
-/* --------------- 4.3 Contact ------------------------ */
+/* --------------- 4.3 Projects ----------------------- */
+#projects {
+    background-color: #F3F6F9;
+}
+
+.project-article {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 100px 0;
+}
+
+/* :nth-child(even) */
+
+.project-article__image-wrapper {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.project-article__image-wrapper img {
+    width: 100%;
+}
+
+.project-article__text-container {
+    flex-basis: 480px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 0 0 0 0; /*nog aanpassen */
+}
+
+.project-article__squiggle {
+    margin-top: 24px;
+    width: 57px;
+    height: 6px;
+    background-image: url("../assets/squiggle_line.svg");
+}
+
+.project-article__text-container p {
+    font-weight: 1; /* nog aanpassen */
+    margin: 0 0; /* nog aanpassen */
+}
+
+.project-article__link {
+    text-transform: uppercase;
+    font-size: 20px; /* nog aanpassen */
+    font-weight: 1; /* nog aanpassen */
+}
+/* --------------- 4.4 Services ----------------------- */
+
+
+/* --------------- 4.5 Contact ------------------------ */
 #contact {
     color: white;
     background-color: #4B49E8;
@@ -221,7 +273,7 @@ button:hover {
     align-self: center;
     width: 200px;
 }
-    /* --------------- 4.4 Footer ------------------------- */
+    /* --------------- 4.6 Footer ------------------------- */
 #footer {
     color: white;
     background-color: black;
